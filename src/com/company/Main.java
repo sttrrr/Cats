@@ -9,8 +9,14 @@ public class Main {
 
         Vasya.setName("Вася");
         System.out.println( Vasya.getCatWeightAndName());
-        System.out.println( Vasya.getOriginWeight());
-        System.out.println( Vasya.getEat());
+
+        System.out.println( Vasya.catEat());
+        System.out.println( Vasya.catEat());
+        System.out.println( Vasya.catEat());
+        System.out.println( Vasya.catEat());
+        System.out.println( Vasya.catEat());
+        System.out.println( Vasya.catEat());
+        System.out.println( Vasya.catEat());
         System.out.println( Vasya.getStatus());
         
 
