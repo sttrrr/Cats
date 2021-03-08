@@ -5,17 +5,14 @@ public class Cat {
 
     String name;
     int weight;
-    int originWeight = weight;
+    boolean isAlive;
+    int originWeight;
 
     public Cat()  {}
 
-    public int getOriginWeight() {
-        return originWeight;
-    }
 
-    public void setOriginWeight(int originWeight) {
-        this.originWeight = originWeight;
-    }
+
+
 
     public int getWeight() {
         return weight;
@@ -25,11 +22,12 @@ public class Cat {
         this.weight = weight;
     }
 
-    public Cat (int weight, String name, int originWeight )
+    public Cat (int weight, String name)
     {
+        isAlive = true;
         this.weight = weight;
         this.name = name;
-        this.originWeight = weight;
+        originWeight = weight;
 
     }
 
@@ -37,7 +35,7 @@ public class Cat {
 
     public String getCatWeightAndName() {
 
-        return ("Кот " + name + " имеет вес: " + originWeight + "г");
+        return ("Кот " + name + " имеет вес: " + weight + "г");
     }
 
     public String getName() {
@@ -51,30 +49,33 @@ public class Cat {
 
 
 
-            public int getEat(){
-                weight = (originWeight + 700);
+            public int catEat(){
 
-                System.out.println("Вес кота" + name + ": " + originWeight + "г");
+                weight = weight + 100;
                 return weight;
-        }
-            public int getMeow(){
-                weight = (originWeight - 5);
-                System.out.println("Вес кота" + name + ": " + originWeight + "г");
+
+
+             }
+            public int catMeow() {
+
+                weight = weight - 5;
                 return weight;
-        }
+            }
 
 
 
         public String getStatus () {
-            if (weight == originWeight - 200) {
-              return "Dead";
-            } else if (weight == originWeight + 600) {
-                 return "Boom";
+            if (weight <= originWeight - 50) {
+                isAlive = false;
+                return "Dead";
+            } else if (weight >= originWeight + 600) {
+                isAlive = false;
+                return "Boom";
             } else {
-            return "Cat is normal";
+                return "Cat is normal";
             }
 
 
-    }
+        }
 
 }
