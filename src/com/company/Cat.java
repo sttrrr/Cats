@@ -27,7 +27,7 @@ public class Cat {
         isAlive = true;
         this.weight = weight;
         this.name = name;
-        originWeight = weight;
+
 
     }
 
@@ -49,27 +49,36 @@ public class Cat {
 
 
 
-            public int catEat(){
-
-                weight = weight + 100;
-                return weight;
+            public void catEat(){
+                if(isAlive = true && weight<2000) {
+                    weight = weight + 100;
+                    System.out.println(weight);
+                        if(weight>2000){
+                            isAlive = false;
+                        }
+                }
 
 
              }
-            public int catMeow() {
+            public void catMeow() {
+                if(isAlive = true && weight>500) {
+                    weight = weight + 100;
+                    System.out.println(weight);
+                    if(weight<500){
+                        isAlive = false;
+                    }
+                }
 
-                weight = weight - 5;
-                return weight;
             }
 
 
 
         public String getStatus () {
-            if (weight <= originWeight - 50) {
-                isAlive = false;
+            if (weight <= 500) {
+
                 return "Dead";
-            } else if (weight >= originWeight + 600) {
-                isAlive = false;
+            } else if (weight >=2000) {
+
                 return "Boom";
             } else {
                 return "Cat is normal";
