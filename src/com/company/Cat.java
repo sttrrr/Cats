@@ -62,7 +62,7 @@ public class Cat {
              }
             public void catMeow() {
                 if(isAlive = true && weight>500) {
-                    weight = weight + 100;
+                    weight = weight - 10;
                     System.out.println(weight);
                     if(weight<500){
                         isAlive = false;
