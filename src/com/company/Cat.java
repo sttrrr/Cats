@@ -6,7 +6,7 @@ public class Cat {
     String name;
     int weight;
     boolean isAlive;
-    
+    int originWeight;
 
     public Cat()  {}
 
@@ -47,31 +47,23 @@ public class Cat {
     }
 
 
-
-
-            public void catEat(){
-                if(isAlive = true && weight<2000) {
+            public void catEat() {
+                if (isAlive = true && weight < 2000) {
                     weight = weight + 100;
-                    System.out.println(weight);
-                        if(weight>2000){
-                            isAlive = false;
-                        }
+                    if (weight > 2000) {
+                        isAlive = false;
+                    }
                 }
-
-
-             }
+            }
             public void catMeow() {
                 if(isAlive = true && weight>500) {
                     weight = weight - 10;
-                    System.out.println(weight);
                     if(weight<500){
                         isAlive = false;
                     }
                 }
-
             }
-
-
+            
 
         public String getStatus () {
             if (weight <= 500) {
@@ -88,3 +80,4 @@ public class Cat {
         }
 
 }
+
