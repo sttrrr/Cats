@@ -6,7 +6,7 @@ public class Cat {
     String name;
     int weight;
     boolean isAlive;
-    int originWeight;
+    
 
     public Cat()  {}
 
