@@ -16,6 +16,7 @@ public class Main {
         Vasya.kittenRegurgitate();
         Vasya.kittenRegurgitate();
         Vasya.getKittenStatus();
+        Vasya.breathe();
         System.out.println( Vasya.getCatWeightAndName());
 
         

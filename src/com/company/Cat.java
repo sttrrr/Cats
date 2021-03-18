@@ -2,7 +2,7 @@ package com.company;
 
 import java.util.Random;
 
-public class Cat {
+public class Cat implements Breathe {
 
 
     String name;
@@ -51,6 +51,7 @@ public class Cat {
             this.isAlive = true;
         }
     }
+
 
 
 

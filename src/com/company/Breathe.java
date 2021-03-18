@@ -1,7 +1,10 @@
 package com.company;
 
-abstract class Breathe {
-    public void Breathe() {
-        System.out.println("Cat is Breathe");
+abstract interface Breathe {
+
+    default void breathe(){
+        System.out.println("Кот дышит");
     }
+
+
 }
