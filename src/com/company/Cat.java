@@ -56,7 +56,7 @@ public class Cat {
 
     public String getCatWeightAndName() {
 
-        return ("Кот " + name + " имеет вес: " + weight + "г " + isAlive +" Цвет кота: " + Color.getRandom());
+        return ("Кот " + name + " имеет вес: " + weight + "г " + isAlive +" Цвет кота: " + Color.getRandom() + );
     }
 
     public String getName() {
