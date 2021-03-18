@@ -4,10 +4,10 @@ import java.net.SocketTimeoutException;
 import java.util.Random;
 
 public enum Color {
-    Green, gray,black,white;
+    Green, gray,black,white, red;
 Random random = new Random();
     public static Color getRandom() {
-        return values()[(int) (Math.random() * 4*  values().length)];
+        return values()[(int) (Math.random() *  values().length)];
     }
 
 
