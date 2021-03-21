@@ -1,13 +1,13 @@
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args) {
-        individualBusinessman Tom = new individualBusinessman();
+        IndividualBusinessman Tom = new IndividualBusinessman();
         Scanner in = new Scanner(System.in);
         System.out.print("Введите сумму: ");
         int amount = in.nextInt();
         System.out.println("ИП");
         Tom.showMoney();
-        Tom.inputMoney();
+        Tom.inputMoney(amount);
 
 
     }

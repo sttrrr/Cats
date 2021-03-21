@@ -1,11 +1,10 @@
 import java.util.Scanner;
 
-public class individualBusinessman implements Client  {
+public class IndividualBusinessman implements Client  {
     private int schet = 300;
 
 
-    public void inputMoney() {
-        int amount = 0;
+    public void inputMoney(int amount) {
         if ( amount > 0) {
             if(amount<1000){
                 schet = (int)(schet + (amount - (amount * 0.01)));
@@ -21,8 +20,8 @@ public class individualBusinessman implements Client  {
         }
     }
 
-    public void outputMoney() {
-        int amount = 0;
+    public void outputMoney(int amount) {
+
         if (schet > amount) {
 
             schet = schet - amount;

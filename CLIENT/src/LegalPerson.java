@@ -5,8 +5,8 @@ public class LegalPerson implements Client{
     private int schet;
 
 
-    public void inputMoney(){
-        int amount = 0;
+    public void inputMoney(int amount){
+
         if (amount>0){
             schet = schet + amount;
             System.out.println(schet);}
@@ -15,8 +15,8 @@ public class LegalPerson implements Client{
         }
     }
 
-    public void outputMoney(){
-        int amount = 0;
+    public void outputMoney(int amount){
+
         if(schet>amount){
             schet = (int) (schet - (amount+amount*0.01));
             System.out.println(schet);}
