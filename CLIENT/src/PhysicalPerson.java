@@ -1,35 +1,29 @@
 import java.util.Scanner;
 
-public class PhysicalPerson extends Client{
+public class PhysicalPerson implements Client{
 
-    private int schet = 300;
-    private int dif;
+    private int schet;
+
 
     public void inputMoney(){
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите сумму, которую хотите внести: ");
-        int dif = in.nextInt();
-        if(dif>0){
-        schet= schet + dif;
-        System.out.println(schet);}
+        int amount = 0;
+        if(amount>0){
+            schet= schet + amount;
+            System.out.println(schet);}
         else{
             System.out.println("Ошибка, вы ввели отрицательное значение");
         }
     }
 
     public void outputMoney(){
-        Scanner in = new Scanner(System.in);
-        System.out.print("Введите сумму, которую хотите снять: ");
-        int dif = in.nextInt();
-        if( schet>dif){
-        schet = schet - dif;
-        System.out.println(schet);}
+        int amount = 0;
+        if( schet>amount){
+            schet = schet - amount;
+            System.out.println(schet);}
         else{
             System.out.println("На счете недостаточно средств");
         }
     }
 
-    public void showMoney(){
-        System.out.println("Ваш остаток по счету: " + schet);
-    }
+
 }

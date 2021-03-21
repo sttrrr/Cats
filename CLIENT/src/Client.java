@@ -1,16 +1,18 @@
-public abstract class Client {
-    private int schet ;
-    private int dif;
+ abstract public  interface Client{
+    public int schet = 300;
 
-    public void inputMoney(){
-        schet= schet + dif;
+
+
+    public static void inputMoney(){
+
     }
 
-    public void outputMoney(){
-        schet = schet - dif;
+    public static void outputMoney(){
+
     }
 
-    public void showMoney(){
+    public default void showMoney(){
+        System.out.println("На вашем счете:"  + schet);
     }
 
 
