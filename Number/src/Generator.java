@@ -24,6 +24,10 @@ public class Generator {
         result[5] = array[index];
         int region = (int) ((Math.random()*((regionmax-cifrramin)+1))+cifrramin);
         result[6] = region;
-
-        System.out.println(Arrays.asList(result));
+        StringBuilder builder = new StringBuilder();
+        for(Object s : result) {
+            builder.append(s);//обновление значения
+        }
+        String str = builder.toString();//привод массива к строке
+        System.out.println(str);
     }}
