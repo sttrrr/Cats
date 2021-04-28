@@ -24,7 +24,8 @@ public class Search {
         person.put(7, "Mary");
         person.put(8, "Carla");
         person.put(9, "Stas");
-        if(strg == true){
+
+        if(intg == false){
             str = sc.nextLine();
             for (Map.Entry<Integer, String> entry : person.entrySet()) {
                 if (entry.getValue().equals(str)) {
