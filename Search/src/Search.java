@@ -14,9 +14,9 @@ public class Search {
 
         boolean intg = sc.hasNextInt();
 
-        person.put(1946, "Mark");
+        person.put(0, "Mark");
         person.put(1, "Jack");
-        person.put(13, "Sofy");
+        person.put(2, "Sofy");
         person.put(3, "Josh");
         person.put(4, "Zen");
         person.put(5, "Pablo");
