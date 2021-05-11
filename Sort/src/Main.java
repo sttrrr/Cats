@@ -1,9 +1,18 @@
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 public class Main {
-    public static void main(String[] args){
-        Persons s = new Persons(int salary, Srting name);
-        s.pers();
-    }
+
+
+    public static void main(String[] args) {
+        int salary;
+
+        Persons p = new Persons();
+        p.emp();
+
+    }}
 
 
 
-}
