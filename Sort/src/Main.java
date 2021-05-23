@@ -1,15 +1,12 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.List;
-
 public class Main {
 
 
     public static void main(String[] args) {
-        int salary;
+        int salary = 0;
+        String name = null;
 
         Persons p = new Persons();
+
         p.emp();
 
     }}

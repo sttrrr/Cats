@@ -1,28 +1,50 @@
 import java.util.*;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
+import static java.util.Arrays.stream;
+
 public class Persons {
-    public Persons(int salary, String name) {
-        salary = salary;
-        name = name;
-    }
 
-    public Persons() {
 
-    }
+
+
 
     public void emp() {
-        List<Persons> person = List.of(
-                //public void pers(){
-                new Persons(16000, "Смирнов"),
-                new Persons(82000, "Ковалев"),
-                new Persons(82000, "Иванов"),
-                new Persons(43000, "Сидоров"),
-                new Persons(67000, "Фирсов"));
-        Stream<Persons> stream;
-        person.stream()
-                .filter(i -> Collections.frequency(person, i) >1)
+        List<Employe> list = List.of(
+        new Employe(16000, "Смирнов"),
+        new Employe(23000, "Соколов"),
+        new Employe(48500, "Иванов"),
+        new Employe(140000, "Медведев"),
+        new Employe(16000, "Попов"),
+        new Employe(84000, "Кузнецов"));
+
+        //public void pers(){
+
+        List<Integer> list1 = new ArrayList<>();
+        List<Integer> result = new ArrayList<>();
+
+        for(Employe employe: list){
+            Integer salary = employe.getSalary();
+            result.add(salary);
+        }
+        result.sort(null);
+        list1 =
+                result;
+        System.out.println(list1);
     }
+    }
+
+
+
+
+
+
+
+
+
+
+
         /*ArrayList<String> sortPerson = person.entrySet()
                 .stream()
                 .sorted(Map.Entry.comparingByKey())
@@ -37,6 +59,6 @@ public class Persons {
 
 
 
-}
+
 
 
